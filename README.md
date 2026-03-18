@@ -315,7 +315,27 @@
 205. What are your testing strategies for non-deterministic outputs?
 206. How do you measure accuracy in generative systems where traditional metrics don't apply?
 207. What operational/business metrics matter for AI systems beyond accuracy? (win rate, deflection rate, p95 latency)
+```
+1. User Satisfaction - ( likes/ dislikes )
+2. TTFT ( time to first token )
+3. Latency, P95, P99
+4. Cost per query
+5. How often does the system failed
+6. 
+```
+
 208. How would you evaluate and monitor a model in production, not just offline?
+
+```
+Monitoring Models in production:
+1. Latency
+2. Error rates
+3. Failure model logging to debug the issue
+4. Data Drift: are the responses are shifting away from what the model was trained on.
+5. user's satisfaction: ( likes/dislikes, copy-paste)
+
+Build an evaluation pipeline that samples production traffic runs LLM-as-judge scoring and detect the model's performance becomes worse than before.
+```
 209. How have you addressed bias/fairness in your models? Can you provide an example of a trade-off you've faced?
 210. What is time to first token and why does it matter for user experience?
 211. How do you measure hallucination rate in production?
